@@ -27,7 +27,7 @@ public class VulnerableController {
     @PostMapping("/login")
     public String login(@RequestParam String username, @RequestParam String password, Model model){
 
-        String sql = "SELECT * FROM users WHERE username = '" + username + "' and password = '" + password + "'";
+        String sql = "SELECT * FROM Users WHERE username = '" + username + "' and password = '" + password + "'";
 
         System.out.println("Requete exécute " + sql);
 
